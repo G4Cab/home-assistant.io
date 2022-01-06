@@ -77,15 +77,18 @@ Example with multiple Repetier Servers:
 
 ```yaml
 repetier:
-  - host: REPETIER_HOST
+  - host: REPETIER_HOST_1
     api_key: YOUR_API_KEY
+    port: 3344
+    name: YourRepetierServerNameOfChoice1
     sensors:
       monitored_conditions:
         - 'current_state'
         - 'current_job'
-  - host: REPETIER_HOST
+  - host: REPETIER_HOST_2
     api_key: YOUR_API_KEY
     port: 3344
+    name: YourRepetierServerNameOfChoice2
 ```
 
 If the Repetier-Server host is equipped with a web camera it is possible to add this as well.
